@@ -324,7 +324,7 @@ Examples include:
 - Orders without corresponding sales records
 - Reconciliation exceptions
 
-![Management Exception Dashboard](MIS%20Project/Dashboard%20Image/Management%20Exception.png)
+![Management Exception Dashboard](MIS%20Project/Dashboard%20Image/Management%20Exceptions.png)
 
 ---
 
