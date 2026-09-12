@@ -1,0 +1,522 @@
+PART 20 – FINAL MANAGEMENT INVESTIGATION
+Integrated Business Performance, MIS Automation & Data Analytics
+=================================================================
+
+MANAGEMENT QUESTION
+
+"The company is generating strong revenue, but management believes that
+profitability, collections, inventory efficiency, and customer performance
+are deteriorating. Identify the exact problems and tell us what actions
+should be taken."
+
+
+=================================================================
+1. WHY IS PROFITABILITY CHANGING?
+=================================================================
+
+FINDINGS:
+
+Total Revenue        : ₹405,114,389.78
+Total Profit         : ₹106,816,364.54
+Overall Profit Margin: 26.37%
+
+Although the company is generating strong revenue, profitability is not
+consistent across products and categories.
+
+Major reasons identified:
+
+• Several products generate negative profit after considering discounts,
+  returns and product cost.
+
+• 14 products were identified as negative-profit Critical exceptions.
+
+• Higher discounts are associated with lower profitability.
+  Statistical analysis found a significant negative relationship between
+  Discount % and Profit Margin.
+
+  Correlation (r) : -0.5577
+  P-value         : approximately 0
+  Result          : Statistically significant
+
+• Product returns are reducing realized profitability.
+
+• Some categories operate at substantially lower margins.
+  Electronics has a margin of approximately 20.46%, compared with
+  Accessories at approximately 29.87%.
+
+ACTION:
+
+Management should introduce minimum-margin controls, review discount
+policies, investigate negative-profit SKUs, reduce avoidable returns,
+and monitor product-level net profitability instead of revenue alone.
+
+
+=================================================================
+2. WHICH PRODUCTS ARE RESPONSIBLE?
+=================================================================
+
+FINDINGS:
+
+The product analysis identified multiple loss-making and high-return
+products.
+
+Examples of negative-profit products:
+
+P0107  : -₹19,052.37
+P0123  : -₹4,574.62
+P0125  : -₹18,334.37
+P0137  : -₹121,489.88
+P0141  : -₹45,521.86
+P0114  : -₹38,589.86
+P0079  : -₹125,005.24
+P0110  : -₹298.68
+P0086  : -₹36,101.40
+P0067  : -₹147,637.33
+P0035  : -₹9,459.42
+P0005  : -₹112,430.63
+P0113  : -₹16,823.28
+P0078  : -₹103,631.03
+
+Products with particularly high return rates include:
+
+P0083 : 20.92%
+P0078 : 20.66%
+P0100 : 19.95%
+P0109 : 19.28%
+P0113 : 18.01%
+
+ACTION:
+
+• Investigate the 14 negative-profit products immediately.
+• Review pricing and cost structure.
+• Reduce excessive discounting.
+• Investigate product quality and return reasons.
+• Renegotiate supplier cost where possible.
+• Consider discontinuing consistently unprofitable products.
+
+
+=================================================================
+3. WHICH REGIONS ARE UNDERPERFORMING?
+=================================================================
+
+FINDINGS:
+
+Overall regional performance is uneven.
+
+Latest August 2026 sales growth:
+
+Bangalore South : +69.45%
+Mumbai West     : +33.19%
+Chennai South   : +7.46%
+Hyderabad South : -6.67%
+Delhi North     : -8.08%
+Pune West       : -52.50%
+Jaipur North    : -67.77%
+
+The strongest concern is Jaipur North, followed by Pune West.
+
+Jaipur North recorded approximately -67.77% latest-month growth.
+
+Pune West recorded approximately -52.50% latest-month growth.
+
+Hyderabad South also has the lowest overall profit margin among the
+active regions at approximately 25.74%.
+
+Kolkata East recorded no sales in the analyzed sales data.
+
+ACTION:
+
+• Investigate Jaipur and Pune immediately.
+• Review employee/customer/product performance in declining regions.
+• Investigate whether Kolkata represents an inactive territory,
+  missing data, or a genuine zero-sales region.
+• Set region-specific recovery targets.
+• Review monthly region growth in the MIS dashboard.
+
+
+=================================================================
+4. WHICH CUSTOMERS ARE CREATING FINANCIAL RISK?
+=================================================================
+
+FINDINGS:
+
+Receivables are a major financial risk.
+
+Total Outstanding Receivables : ₹239,658,854.62
+Outstanding Invoices          : 2,108
+Money at Risk (>90 days)      : ₹234,020,773.56
+Risk Percentage               : 97.65%
+
+Aging analysis:
+
+31–60 Days  : ₹1,096,476.90
+61–90 Days  : ₹4,541,604.16
+91–180 Days : ₹37,195,530.04
+181–365 Days: ₹67,767,506.39
+365+ Days   : ₹129,057,737.13
+
+365+ days alone represents approximately 53.85% of outstanding
+receivables.
+
+Highest overdue customers include:
+
+C00146 – Vijay Iyer   : ₹2,126,425.72
+C00307 – Manoj Kumar  : ₹1,839,860.15
+C00166 – Asha Das     : ₹1,734,170.64
+C00456 – Sanjay Patel : ₹1,643,594.94
+C00367 – Ajay Singh   : ₹1,616,697.61
+C00011 – Surya Kumar  : ₹1,558,346.04
+C00321 – Priya Nair   : ₹1,518,521.54
+C00186 – Rohit Patel  : ₹1,455,779.51
+C00102 – Arun Reddy   : ₹1,388,343.02
+C00042 – Anitha Iyer  : ₹1,375,587.08
+
+Customer credit-risk classification:
+
+Critical Customers : 433
+High-Risk Customers: 144
+Medium Risk        : 1
+
+ACTION:
+
+• Prioritize collections from Critical customers.
+• Introduce automated overdue alerts.
+• Apply credit limits based on payment history.
+• Restrict additional credit for severely overdue customers.
+• Create collection ownership and escalation procedures.
+• Review 365+ day receivables for recovery/write-off decisions.
+
+
+=================================================================
+5. WHICH EMPLOYEES REQUIRE INTERVENTION?
+=================================================================
+
+FINDINGS:
+
+Total Active Employees   : 104
+Inactive Employees       : 13
+Attrition Rate           : 11.11%
+Attendance Rate          : 79.01%
+Average Working Hours    : 6.92
+Average Late Minutes     : 44.95
+
+Attendance status:
+
+Present : 5,213
+Leave   : 713
+Absent  : 672
+
+Management Exception analysis identified:
+
+Employees with Attendance <85% : 88 Medium exceptions.
+
+The derived employee performance analysis classified:
+
+High Performer : 1
+Good           : 29
+Average        : 8
+Low            : 79
+
+E0013 – Kavya Rao was the only employee classified as High Performer
+under the derived performance-scoring model.
+
+ACTION:
+
+• Review the 88 attendance exceptions.
+• Provide coaching to low-performing employees.
+• Investigate repeated absenteeism and lateness.
+• Compare sales productivity with attendance.
+• Set employee-level targets and monthly performance reviews.
+• Recognize and study high-performing employees for best practices.
+
+NOTE:
+
+The performance classification is a derived analytical score because
+the source data did not contain a formal employee performance-rating
+field.
+
+
+=================================================================
+6. WHICH SUPPLIERS ARE CAUSING OPERATIONAL PROBLEMS?
+=================================================================
+
+FINDINGS:
+
+Total Suppliers       : 49
+Purchase Transactions : 1,452
+Total Purchase Value  : ₹2,531,826,824.19
+Rejected Quantity     : 5,339
+Rejection Rate        : 3.49%
+Average Delivery Time : 21.44 days
+On-Time Delivery Rate : 17.84%
+Average Quality Rating: 3.88
+
+Among suppliers with purchase activity:
+
+Poor     : 40
+Critical : 6
+
+Critical suppliers:
+
+S046 : Score 39.69
+S040 : Score 39.37
+S043 : Score 39.15
+S001 : Score 38.86
+S003 : Score 38.14
+S011 : Score 37.93
+
+ACTION:
+
+• Escalate the six Critical suppliers.
+• Establish supplier improvement plans.
+• Introduce minimum on-time delivery SLA requirements.
+• Track rejected quantity and quality rating monthly.
+• Renegotiate contracts where performance is poor.
+• Identify alternate suppliers for repeated SLA failures.
+
+Three suppliers with no purchase activity should be classified
+separately as "No Purchase Activity" rather than judged using
+operational performance.
+
+
+=================================================================
+7. WHERE IS INVENTORY BEING WASTED?
+=================================================================
+
+FINDINGS:
+
+Closing Stock          : 115,011 units
+Stock Value            : ₹1,930,404,121.46
+Average Inventory      : 111,229 units
+Inventory Turnover     : 0.67
+Days Inventory         : 541.65 days
+Stockout Days          : 3,041
+Overstocked Products   : 75
+
+Product movement classification:
+
+Fast Moving   : 23 products
+Medium Moving : 92 products
+Slow Moving   : 34 products
+Dead Stock    : 0 products
+
+Slow-moving products contain:
+
+Closing Stock : 34,938 units
+Stock Value   : ₹578,207,411.65
+
+The company therefore has significant capital locked in inventory,
+while simultaneously experiencing stockout days.
+
+ACTION:
+
+• Reduce purchase quantities for slow-moving products.
+• Review the 75 overstocked products.
+• Introduce demand-based reorder levels.
+• Reallocate inventory between warehouses.
+• Increase availability of fast-moving products.
+• Monitor inventory turnover and days inventory monthly.
+• Establish slow-moving inventory clearance strategies.
+
+
+=================================================================
+8. WHICH MARKETING CHANNELS ARE INEFFICIENT?
+=================================================================
+
+FINDINGS:
+
+Overall marketing performance:
+
+Campaigns        : 177
+Marketing Spend  : ₹21,278,836
+Leads            : 575,219
+Conversions      : 66,938
+Conversion Rate  : 11.64%
+Revenue          : ₹60,979,947.16
+CAC              : ₹317.89
+ROI              : 186.58%
+
+Channel ROI:
+
+Referral : 222.63%
+Social   : 190.48%
+Other    : 187.37%
+Google   : 175.20%
+Email    : 150.45%
+
+Email is the least efficient channel based on ROI.
+
+Referral provides the highest ROI.
+
+However, the "Other" channel generates the highest total marketing
+revenue and net contribution.
+
+ACTION:
+
+• Reduce or optimize low-performing Email campaigns.
+• Increase focus on high-ROI Referral campaigns where scalable.
+• Evaluate individual campaigns instead of channel averages alone.
+• Monitor CAC, conversion rate, revenue and ROI together.
+• Test budget reallocation using controlled campaign experiments.
+
+
+=================================================================
+9. WHAT ARE THE BIGGEST DATA-QUALITY PROBLEMS?
+=================================================================
+
+FINDINGS:
+
+Raw Records     : 23,947
+Valid Records   : 23,642
+Invalid/Removed : 305
+Data Quality    : 98.73%
+
+Overall data quality is high, but relational-integrity analysis
+identified important master-data problems.
+
+Candidate foreign-key audit identified 732 failed references across
+transaction relationships.
+
+Examples:
+
+Sales -> Customer : 16
+Sales -> Product  : 148
+Sales -> Employee : 203
+Sales Target -> Employee : 16
+Order -> Customer : 14
+Order -> Employee : 151
+Invoice -> Order  : 8
+Payment -> Invoice: 1
+Purchase -> Product: 13
+Inventory -> Product: 27
+Attendance -> Employee: 132
+Complaint -> Customer: 3
+
+These are failed relationship references and should not be interpreted
+as 732 unique bad rows because one transaction may contain more than
+one invalid relationship.
+
+ACTION:
+
+• Enforce primary-key and foreign-key validation.
+• Validate IDs before loading transactions.
+• Introduce automated data-quality checks in Power Query/SQL.
+• Maintain consistent master-data records.
+• Reject or quarantine orphan transactions.
+• Produce a data-quality exception report during each refresh.
+
+
+=================================================================
+10. TOP 10 ISSUES MANAGEMENT SHOULD ADDRESS
+=================================================================
+
+PRIORITY 1 – RECEIVABLES / COLLECTION RISK
+₹239.66M remains outstanding and approximately 97.65% of the
+outstanding amount is older than 90 days.
+
+ACTION:
+Immediate collection escalation and customer credit controls.
+
+
+PRIORITY 2 – VERY OLD RECEIVABLES
+₹129.06M is in the 365+ day aging bucket.
+
+ACTION:
+Recovery, legal escalation, settlement or write-off review.
+
+
+PRIORITY 3 – INVENTORY CAPITAL LOCK-UP
+Inventory value is approximately ₹1.93B with inventory turnover of
+only 0.67 and approximately 541.65 days inventory.
+
+ACTION:
+Reduce overstock and improve demand planning.
+
+
+PRIORITY 4 – OVERSTOCK
+75 products were identified as overstocked.
+
+ACTION:
+Reduce replenishment and implement clearance/reallocation strategies.
+
+
+PRIORITY 5 – REGIONAL SALES DECLINE
+Jaipur North (-67.77%) and Pune West (-52.50%) show severe latest-month
+sales decline.
+
+ACTION:
+Launch region-level recovery plans.
+
+
+PRIORITY 6 – NEGATIVE-PROFIT PRODUCTS
+14 products were identified as Critical negative-profit exceptions.
+
+ACTION:
+Review price, discount, cost, returns and product continuation.
+
+
+PRIORITY 7 – SUPPLIER PERFORMANCE
+Only 17.84% overall on-time delivery was observed, with six purchasing
+suppliers classified as Critical.
+
+ACTION:
+Enforce supplier SLAs and develop alternative sourcing.
+
+
+PRIORITY 8 – EMPLOYEE ATTENDANCE / PRODUCTIVITY
+88 employee attendance exceptions were identified below the 85%
+threshold.
+
+ACTION:
+Implement attendance and productivity intervention.
+
+
+PRIORITY 9 – CUSTOMER COMPLAINT SLA
+688 complaints were analyzed and 452 breached SLA.
+Overall SLA compliance was only 34.30%.
+
+ACTION:
+Improve complaint ownership, escalation and resolution time.
+
+
+PRIORITY 10 – DATA INTEGRITY
+Relational audit detected 732 failed reference relationships.
+
+ACTION:
+Implement automated referential-integrity checks before data enters
+the MIS.
+
+
+=================================================================
+MANAGEMENT CONCLUSION
+=================================================================
+
+The analysis confirms that the company's primary problem is not lack
+of revenue.
+
+The company generated approximately ₹405.11M in sales and ₹106.82M
+in profit, but operational inefficiencies are creating substantial
+business risk.
+
+The most urgent concern is receivables management. Approximately
+₹239.66M remains outstanding and ₹234.02M of this amount is more than
+90 days old.
+
+Inventory is the second major concern. Approximately ₹1.93B is tied
+up in inventory, turnover is only 0.67, and 75 products are
+overstocked while stockout days are also occurring.
+
+Management should therefore prioritize:
+
+Collections and credit control,
+inventory optimization,
+negative-profit product correction,
+regional recovery,
+supplier SLA improvement,
+employee productivity,
+customer complaint resolution,
+and stronger data governance.
+
+The automated MIS and Power BI dashboard should be used as the
+central monitoring system for these KPIs and management exceptions.
+=================================================================

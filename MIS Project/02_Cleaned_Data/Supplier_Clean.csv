@@ -1,0 +1,50 @@
+﻿Supplier_ID,Supplier_Name,Region_ID,City,State,Lead_Time_Days,Quality_Score,Payment_Terms_Days,Status
+S001,Supplier 01,R005,Pune,Maharashtra,5,4.1,60,Active
+S002,Supplier 02,R005,Pune,Maharashtra,16,2.9,60,Active
+S003,Supplier 03,R002,Chennai,Tamil Nadu,26,3.8,90,Active
+S004,Supplier 04,R007,Kolkata,West Bengal,17,3.9,60,Active
+S005,Supplier 05,R006,Delhi,Delhi,30,3.9,30,Active
+S006,Supplier 06,R004,Mumbai,Maharashtra,10,3.3,90,Active
+S008,Supplier 08,R006,Delhi,Delhi,6,3.9,15,Active
+S009,Supplier 09,R006,Delhi,Delhi,11,4.3,45,Active
+S010,Supplier 10,R007,Kolkata,West Bengal,21,3.6,45,Active
+S011,Supplier 11,R004,Mumbai,Maharashtra,8,2.8,15,Inactive
+S012,Supplier 12,R005,Pune,Maharashtra,16,4,30,Active
+S013,Supplier 13,R006,Delhi,Delhi,7,4.2,60,Active
+S014,Supplier 14,R008,Jaipur,Rajasthan,25,3,60,Active
+S015,Supplier 15,R008,Jaipur,Rajasthan,10,2.9,30,Active
+S016,Supplier 16,R007,Kolkata,West Bengal,2,4.8,60,Active
+S017,Supplier 17,R004,Mumbai,Maharashtra,15,2.7,60,Inactive
+S018,Supplier 18,R008,Jaipur,Rajasthan,22,4.7,30,Active
+S019,Supplier 19,R007,Kolkata,West Bengal,4,4,60,Active
+S020,Supplier 20,R007,Kolkata,West Bengal,35,4.1,15,Active
+S021,Supplier 21,R002,Chennai,Tamil Nadu,30,3.6,15,Active
+S022,Supplier 22,R007,Kolkata,West Bengal,4,3.9,90,Active
+S023,Supplier 23,R004,Mumbai,Maharashtra,20,3.6,45,Active
+S024,Supplier 24,R008,Jaipur,Rajasthan,12,3.6,90,Active
+S025,Supplier 25,R003,Hyderabad,Telangana,31,4.6,60,Active
+S026,Supplier 26,R002,Chennai,Tamil Nadu,13,4.4,90,Active
+S027,Supplier 27,R007,Kolkata,West Bengal,28,3.3,15,Active
+S028,Supplier 28,R008,Jaipur,Rajasthan,14,4.7,15,Active
+S029,Supplier 29,R006,Delhi,Delhi,12,4.3,15,Active
+S030,Supplier 30,R002,Chennai,Tamil Nadu,30,4.1,15,Active
+S031,Supplier 31,R007,Kolkata,West Bengal,34,4,30,Active
+S032,Supplier 32,R007,Kolkata,West Bengal,4,4.4,45,Inactive
+S033,Supplier 33,R003,Hyderabad,Telangana,12,4.7,30,Active
+S034,Supplier 34,R007,Kolkata,West Bengal,21,3.3,60,Active
+S035,Supplier 35,R003,Hyderabad,Telangana,9,4.7,30,Active
+S036,Supplier 36,R005,Pune,Maharashtra,2,3.6,60,Active
+S037,Supplier 37,R001,Bangalore,Karnataka,33,3.1,90,Active
+S038,Supplier 38,R008,Jaipur,Rajasthan,28,3.6,90,Inactive
+S039,Supplier 39,R001,Bangalore,Karnataka,17,4.7,45,Inactive
+S040,Supplier 40,R004,Mumbai,Maharashtra,5,3,15,Active
+S041,Supplier 41,R001,Bangalore,Karnataka,11,4.6,90,Inactive
+S042,Supplier 42,R005,Pune,Maharashtra,23,4.8,15,Active
+S043,Supplier 43,R007,Kolkata,West Bengal,13,2.9,45,Inactive
+S044,Supplier 44,R003,Hyderabad,Telangana,31,4.4,45,Active
+S045,Supplier 45,R002,Chennai,Tamil Nadu,21,3.3,60,Active
+S046,Supplier 46,R007,Kolkata,West Bengal,6,3.2,30,Active
+S047,Supplier 47,R005,Pune,Maharashtra,23,3.8,90,Active
+S048,Supplier 48,R004,Mumbai,Maharashtra,5,2.8,90,Active
+S049,Supplier 49,R008,Jaipur,Rajasthan,20,3.6,45,Active
+S050,Supplier 50,R006,Delhi,Delhi,10,4,60,Active

@@ -1,0 +1,443 @@
+============================================================
+POWER BI DAX - INTEGRATED BUSINESS MIS PROJECT
+MEASURES + CALCULATED COLUMNS + DATE TABLE
+============================================================
+
+
+============================================================
+1. DATE TABLE
+Modeling -> New Table
+============================================================
+
+Date Table =
+ADDCOLUMNS(
+    CALENDAR(DATE(2025,1,1), DATE(2026,12,31)),
+    "Year", YEAR([Date]),
+    "Month No", MONTH([Date]),
+    "Month", FORMAT([Date], "MMM"),
+    "Year Month", FORMAT([Date], "YYYY-MM"),
+    "Quarter", "Q" & FORMAT([Date], "Q")
+)
+
+
+============================================================
+2. DATE TABLE - CALCULATED COLUMN
+============================================================
+
+YearMonthSort =
+YEAR('Date Table'[Date]) * 100 +
+MONTH('Date Table'[Date])
+
+
+============================================================
+3. CORE / EXECUTIVE MEASURES
+Create in: Measures (2)
+============================================================
+
+Total Revenue =
+SUM(Sales[Sales_Value])
+
+
+Total Profit =
+SUM(Sales[Profit])
+
+
+Total Sales Target =
+SUM('Sales Targets'[Sales_Target])
+
+
+Achievement % =
+DIVIDE(
+    [Total Revenue],
+    [Total Sales Target],
+    0
+)
+
+
+Total Orders =
+DISTINCTCOUNT(Sales[Order_ID])
+
+
+Total Customers =
+DISTINCTCOUNT(Sales[Customer_ID])
+
+
+Total Collections =
+CALCULATE(
+    SUM(Payment[Payment_Amount]),
+    Payment[Payment_Status] = "Success"
+)
+
+
+Total Billing =
+SUM(Invoice[Invoice_Amount])
+
+
+Outstanding =
+[Total Billing] - [Total Collections]
+
+
+Inventory Value =
+SUM(Inventory[Stock_Value])
+
+
+Previous Month Revenue =
+CALCULATE(
+    [Total Revenue],
+    DATEADD(
+        'Date Table'[Date],
+        -1,
+        MONTH
+    )
+)
+
+
+Growth % =
+DIVIDE(
+    [Total Revenue] - [Previous Month Revenue],
+    [Previous Month Revenue],
+    0
+)
+
+
+============================================================
+4. CUSTOMER ANALYTICS MEASURES
+============================================================
+
+New Customers =
+VAR CurrentCustomers =
+    VALUES(Sales[Customer_ID])
+VAR PreviousCustomers =
+    CALCULATETABLE(
+        VALUES(Sales[Customer_ID]),
+        FILTER(
+            ALL('Date Table'[Date]),
+            'Date Table'[Date] < MIN('Date Table'[Date])
+        )
+    )
+RETURN
+COUNTROWS(
+    EXCEPT(
+        CurrentCustomers,
+        PreviousCustomers
+    )
+)
+
+
+Repeat Customers =
+VAR CustomerOrders =
+    SUMMARIZE(
+        Sales,
+        Sales[Customer_ID],
+        "OrderCount",
+        DISTINCTCOUNT(Sales[Order_ID])
+    )
+RETURN
+COUNTROWS(
+    FILTER(
+        CustomerOrders,
+        [OrderCount] > 1
+    )
+)
+
+
+Average Customer Value =
+DIVIDE(
+    [Total Revenue],
+    [Total Customers],
+    0
+)
+
+
+============================================================
+5. CUSTOMER - CALCULATED COLUMN
+Create in: Customer table
+============================================================
+
+Customer Segment =
+VAR CustomerSales =
+    CALCULATE(
+        [Total Revenue],
+        FILTER(
+            Sales,
+            Sales[Customer_ID] = Customer[Customer_ID]
+        )
+    )
+RETURN
+SWITCH(
+    TRUE(),
+    CustomerSales >= 1000000, "High Value",
+    CustomerSales >= 500000, "Medium Value",
+    CustomerSales > 0, "Low Value",
+    "No Purchase"
+)
+
+
+============================================================
+6. PRODUCT ANALYTICS MEASURES
+============================================================
+
+Profit Margin % =
+DIVIDE(
+    [Total Profit],
+    [Total Revenue],
+    0
+)
+
+
+Total Return Value =
+SUM(Returns[Return_Value])
+
+
+Total Stock =
+SUM(Inventory[Closing_Stock])
+
+
+============================================================
+7. FINANCE MEASURES
+============================================================
+
+Collection % =
+DIVIDE(
+    [Total Collections],
+    [Total Billing],
+    0
+)
+
+
+Customer Overdue Outstanding =
+VAR SelectedOrders =
+    CALCULATETABLE(
+        VALUES('Order'[Order_ID]),
+        TREATAS(
+            VALUES(Customer[Customer_ID]),
+            'Order'[Customer_ID]
+        )
+    )
+VAR CustomerInvoices =
+    CALCULATETABLE(
+        VALUES(Invoice[Invoice_ID]),
+        TREATAS(
+            SelectedOrders,
+            Invoice[Order_ID]
+        )
+    )
+RETURN
+SUMX(
+    FILTER(
+        Invoice,
+        Invoice[Invoice_ID] IN CustomerInvoices
+            && Invoice[Due_Date] < TODAY()
+    ),
+    VAR CurrentInvoice =
+        Invoice[Invoice_ID]
+    VAR PaidAmount =
+        CALCULATE(
+            SUM(Payment[Payment_Amount]),
+            Payment[Invoice_ID] = CurrentInvoice,
+            Payment[Payment_Status] = "Success"
+        )
+    VAR Remaining =
+        Invoice[Invoice_Amount] -
+        COALESCE(PaidAmount, 0)
+    RETURN
+        IF(
+            Remaining > 0,
+            Remaining,
+            0
+        )
+)
+
+
+Overdue Amount =
+SUMX(
+    VALUES(Customer[Customer_ID]),
+    [Customer Overdue Outstanding]
+)
+
+
+Overdue Customers =
+COUNTROWS(
+    FILTER(
+        VALUES(Customer[Customer_ID]),
+        [Customer Overdue Outstanding] > 0
+    )
+)
+
+
+============================================================
+8. INVOICE - CALCULATED COLUMNS
+Create in: Invoice table
+============================================================
+
+Aging Bucket =
+VAR DaysOverdue =
+    TODAY() - Invoice[Due_Date]
+RETURN
+SWITCH(
+    TRUE(),
+    DaysOverdue <= 30, "0-30 Days",
+    DaysOverdue <= 60, "31-60 Days",
+    DaysOverdue <= 90, "61-90 Days",
+    DaysOverdue <= 180, "91-180 Days",
+    DaysOverdue <= 365, "181-365 Days",
+    "365+ Days"
+)
+
+
+Aging Sort =
+VAR DaysOverdue =
+    TODAY() - Invoice[Due_Date]
+RETURN
+SWITCH(
+    TRUE(),
+    DaysOverdue <= 30, 1,
+    DaysOverdue <= 60, 2,
+    DaysOverdue <= 90, 3,
+    DaysOverdue <= 180, 4,
+    DaysOverdue <= 365, 5,
+    6
+)
+
+
+============================================================
+9. INVENTORY MEASURES
+============================================================
+
+Stock Value =
+SUM(Inventory[Stock_Value])
+
+
+Stockout Products =
+CALCULATE(
+    DISTINCTCOUNT(Inventory[Product_ID]),
+    FILTER(
+        Inventory,
+        Inventory[Closing_Stock] <= 0
+            || Inventory[Stockout_Days] > 0
+    )
+)
+
+
+Overstock Products =
+CALCULATE(
+    DISTINCTCOUNT(Inventory[Product_ID]),
+    FILTER(
+        Inventory,
+        Inventory[Closing_Stock] > 0
+            &&
+        Inventory[Closing_Stock] >
+            3 * RELATED(Product[Reorder_Level])
+    )
+)
+
+
+============================================================
+10. INVENTORY - CALCULATED COLUMN
+Create in: Inventory table
+============================================================
+
+Movement Type =
+VAR ProductSales =
+    Inventory[Sales_Qty]
+VAR AvgSales =
+    CALCULATE(
+        AVERAGE(Inventory[Sales_Qty]),
+        ALL(Inventory)
+    )
+RETURN
+SWITCH(
+    TRUE(),
+    ProductSales >= AvgSales * 1.25, "Fast Moving",
+    ProductSales >= AvgSales * 0.75, "Medium Moving",
+    "Slow Moving"
+)
+
+
+============================================================
+11. MANAGEMENT EXCEPTION MEASURES
+============================================================
+
+Total Exceptions =
+COUNTROWS('Management Exceptions')
+
+
+Critical Exceptions =
+COUNTROWS(
+    FILTER(
+        'Management Exceptions',
+        TRIM('Management Exceptions'[Priority]) = "Critical"
+    )
+)
+
+
+High Exceptions =
+COUNTROWS(
+    FILTER(
+        'Management Exceptions',
+        TRIM('Management Exceptions'[Priority]) = "High"
+    )
+)
+
+
+Medium Exceptions =
+COUNTROWS(
+    FILTER(
+        'Management Exceptions',
+        TRIM('Management Exceptions'[Priority]) = "Medium"
+    )
+)
+
+
+============================================================
+FINAL LIST
+============================================================
+
+MEASURES:
+
+01. Achievement %
+02. Average Customer Value
+03. Collection %
+04. Critical Exceptions
+05. Customer Overdue Outstanding
+06. Growth %
+07. High Exceptions
+08. Inventory Value
+09. Medium Exceptions
+10. New Customers
+11. Outstanding
+12. Overdue Amount
+13. Overdue Customers
+14. Overstock Products
+15. Previous Month Revenue
+16. Profit Margin %
+17. Repeat Customers
+18. Stock Value
+19. Stockout Products
+20. Total Billing
+21. Total Collections
+22. Total Customers
+23. Total Exceptions
+24. Total Orders
+25. Total Profit
+26. Total Return Value
+27. Total Revenue
+28. Total Sales Target
+29. Total Stock
+
+CALCULATED COLUMNS:
+
+01. Date Table[YearMonthSort]
+02. Customer[Customer Segment]
+03. Invoice[Aging Bucket]
+04. Invoice[Aging Sort]
+05. Inventory[Movement Type]
+
+CALCULATED TABLE:
+
+01. Date Table
+
+NOTE:
+Measures (2)[Column1] is only the dummy column used to create
+the Measures table. It is NOT a DAX measure.
+============================================================

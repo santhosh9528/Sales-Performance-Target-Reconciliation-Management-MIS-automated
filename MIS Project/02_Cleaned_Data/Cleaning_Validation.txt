@@ -1,0 +1,25 @@
+INTEGRATED BUSINESS PROJECT - CLEANED DATA VALIDATION
+=======================================================
+
+All cleaned CSV row counts were checked against the Power Query validated counts.
+
+Employee_Clean: Raw 121 | Clean 117 | Removed 4 | OK
+Customer_Clean: Raw 601 | Clean 597 | Removed 4 | OK
+Product_Clean: Raw 151 | Clean 144 | Removed 7 | OK
+Region_Clean: Raw 9 | Clean 8 | Removed 1 | OK
+Sales_Clean: Raw 4,002 | Clean 3,958 | Removed 44 | OK
+Sales_Targets_Clean: Raw 321 | Clean 319 | Removed 2 | OK
+Order_Clean: Raw 3,001 | Clean 2,990 | Removed 11 | OK
+Invoice_Clean: Raw 2,752 | Clean 2,747 | Removed 5 | OK
+Payment_Clean: Raw 2,602 | Clean 2,595 | Removed 7 | OK
+Purchase_Clean: Raw 1,501 | Clean 1,452 | Removed 49 | OK
+Inventory_Clean: Raw 901 | Clean 761 | Removed 140 | OK
+Supplier_Clean: Raw 51 | Clean 49 | Removed 2 | OK
+Returns_Clean: Raw 451 | Clean 442 | Removed 9 | OK
+Attendance_Clean: Raw 6,601 | Clean 6,598 | Removed 3 | OK
+Customer_Complaints_Clean: Raw 701 | Clean 688 | Removed 13 | OK
+Marketing_Campaign_Clean: Raw 181 | Clean 177 | Removed 4 | OK
+
+TOTAL: Raw 23,947 | Clean 23,642 | Removed 305
+
+Payment_Clean corrected clean count: 2,595 rows.

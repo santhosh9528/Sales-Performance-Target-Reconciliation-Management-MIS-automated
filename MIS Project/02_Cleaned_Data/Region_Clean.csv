@@ -1,0 +1,9 @@
+﻿Region_ID,Zone,City,State,Region_Name,Status
+R001,South,Bangalore,Karnataka,Bangalore Region,Active
+R002,South,Chennai,Tamil Nadu,Chennai Region,Active
+R003,South,Hyderabad,Telangana,Hyderabad Region,Active
+R004,West,Mumbai,Maharashtra,Mumbai Region,Active
+R005,West,Pune,Maharashtra,Pune Region,Active
+R006,North,Delhi,Delhi,Delhi Region,Active
+R007,East,Kolkata,West Bengal,Kolkata Region,Active
+R008,North,Jaipur,Rajasthan,Jaipur Region,Active

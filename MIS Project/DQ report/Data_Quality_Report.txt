@@ -1,0 +1,353 @@
+PART 1 - DATA QUALITY & VALIDATION REPORT
+=========================================
+
+Project: Integrated Business Performance, MIS Automation & Data Analytics
+
+Formula:
+Data Quality Score = (Valid Records / Total Records) × 100
+
+
+1. Employee_Master
+------------------
+Total Records   : 121
+Valid Records   : 117
+Invalid Records : 4
+DQ Score        : 96.69%
+
+Issues:
+- Missing Employee ID
+- Missing Date of Joining
+- Future Date of Joining (2030)
+- Duplicate Employee ID
+- Invalid Region ID: 0
+
+
+2. Customer_Master
+------------------
+Total Records   : 601
+Valid Records   : 597
+Invalid Records : 4
+DQ Score        : 99.33%
+
+Issues:
+- Missing Customer ID
+- Missing Join Date
+- Invalid Region ID
+- Duplicate Customer ID: C00101
+
+
+3. Product_Master
+-----------------
+Total Records   : 151
+Valid Records   : 144
+Invalid Records : 7
+DQ Score        : 95.36%
+
+Issues:
+- Missing Product ID
+- Negative Selling Price: -999
+- Invalid Supplier references
+- S007 unmatched
+- S999 unmatched
+- Duplicate Product ID: P0026
+
+
+4. Region_Master
+----------------
+Total Records   : 9
+Valid Records   : 8
+Invalid Records : 1
+DQ Score        : 88.89%
+
+Issues:
+- Duplicate Region ID: R003
+- Missing Region ID: 0
+
+
+5. Sales_Transactions
+---------------------
+Total Records   : 4,002
+Valid Records   : 3,958
+Invalid Records : 44
+DQ Score        : 98.90%
+
+Issues:
+- Missing Transaction ID
+- Missing Sales Date
+- Invalid Customer IDs: C00013, C99999
+- Invalid Product IDs: P0016, P9999
+- Invalid Employee ID: E9999
+- Negative/Invalid Quantity
+- Negative Unit Price
+- Negative Sales Value
+- Duplicate Transactions: ST0000501, ST0000502
+- Invalid Region ID: 0
+
+
+6. Sales_Targets
+----------------
+Total Records   : 321
+Valid Records   : 319
+Invalid Records : 2
+DQ Score        : 99.38%
+
+Issues:
+- Invalid Employee ID: E9999
+- Duplicate Target ID: T01E0012
+- Missing Target ID: 0
+- Invalid Region ID: 0
+
+
+7. Order_Transactions
+---------------------
+Total Records   : 3,001
+Valid Records   : 2,990
+Invalid Records : 11
+DQ Score        : 99.63%
+
+Issues:
+- Missing Order ID
+- Missing Order Date
+- Invalid Customer IDs: C00013, C99999
+- Invalid Employee ID: E9999
+- Duplicate Order ID: O000201
+- Invalid Region ID: 0
+
+
+8. Invoice_Data
+---------------
+Total Records   : 2,752
+Valid Records   : 2,747
+Invalid Records : 5
+DQ Score        : 99.82%
+
+Issues:
+- Missing Invoice ID
+- Unmatched Order IDs: O999999, O000023
+- Duplicate Invoice ID: INV000101
+- INV000101 appears 3 times
+- Extra duplicate records: 2
+- Invalid Due Date logic: 0
+- Invoice Amount <= 0: 0
+
+
+9. Payment_Data
+---------------
+Total Records   : 2,602
+Valid Records   : 2,597
+Invalid Records : 5
+DQ Score        : 99.81%
+
+Issues:
+- Missing Payment ID
+- Invalid Invoice reference: INV999999
+- Negative Payment Amount: -2500
+- Duplicate Payment ID: PAY000151
+- PAY000151 appears 3 times
+- Extra duplicate records: 2
+
+
+10. Purchase_Data
+-----------------
+Total Records   : 1,501
+Valid Records   : 1,452
+Invalid Records : 49
+DQ Score        : 96.74%
+
+Issues:
+- Invalid Product references: 9 rows
+- Invalid Supplier references: 38 rows
+- Quantity <= 0: 1 row
+- Duplicate Purchase ID: PO000251
+- Missing Purchase ID: 0
+
+
+11. Inventory_Data
+------------------
+Total Records   : 901
+Valid Records   : 761
+Invalid Records : 140
+DQ Score        : 84.46%
+
+Issues:
+- Negative Closing Stock: 134 rows
+- Invalid Product references: 7 rows
+- Duplicate Inventory ID: INVSTK-P0017-WH-DEL
+- Duplicate record already included in invalid records
+- Missing Inventory ID: 0
+
+
+12. Supplier_Data
+-----------------
+Total Records   : 51
+Valid Records   : 49
+Invalid Records : 2
+DQ Score        : 96.08%
+
+Issues:
+- Missing Supplier ID
+- Duplicate Supplier ID: S013
+
+
+13. Returns_Data
+----------------
+Total Records   : 451
+Valid Records   : 442
+Invalid Records : 9
+DQ Score        : 98.00%
+
+Issues:
+- Missing Return ID
+- Invalid Transaction ID: ST9999999
+- Invalid Customer reference: C00013
+- Invalid Product reference: P0016
+- Duplicate Return ID: RET00081
+- Invalid Order ID: 0
+
+
+14. Attendance_Data
+-------------------
+Total Records   : 6,601
+Valid Records   : 6,598
+Invalid Records : 3
+DQ Score        : 99.95%
+
+Issues:
+- Invalid Employee ID: E9999
+- Missing Attendance Date
+- Duplicate Attendance ID: ATT-E0009-20260723
+- Missing Attendance ID: 0
+
+
+15. Customer_Complaints
+-----------------------
+Total Records   : 701
+Valid Records   : 688
+Invalid Records : 13
+DQ Score        : 98.15%
+
+Issues:
+- Missing Complaint ID
+- Invalid Customer references: C00013, C99999
+- Invalid Product references: P0016, P9999
+- Duplicate Complaint ID: CMP000121
+- Invalid Employee ID: 0
+
+
+16. Marketing_Campaign_Data
+---------------------------
+Total Records   : 181
+Valid Records   : 177
+Invalid Records : 4
+DQ Score        : 97.79%
+
+Issues:
+- Missing Campaign ID
+- Negative Campaign Spend: -50000
+- Zero Leads
+- Duplicate Campaign ID: CAM0091
+- Invalid Region ID: 0
+
+
+FINANCE RECONCILIATION FINDINGS
+===============================
+
+Orders Without Invoice
+----------------------
+Raw Unmatched Rows: 253
+
+Invoices Without Payment
+------------------------
+Raw Unmatched Invoice Rows: 1,058
+
+Payment Reconciliation
+----------------------
+Underpaid Invoice-Level Records : 951
+Overpaid Invoice-Level Records  : 743
+Matched                         : 0
+Invalid Invoice Reference       : INV999999
+
+Total Underpaid + Overpaid Invoice-Level Records: 1,694
+
+
+MAJOR DATA QUALITY FINDINGS
+===========================
+
+1. Inventory_Data has the lowest Data Quality Score at 84.46%.
+2. Inventory_Data contains 134 negative Closing Stock records.
+3. Sales_Transactions contains invalid customer, product and employee references.
+4. Purchase_Data contains significant supplier reference issues.
+5. Duplicate records exist across multiple datasets.
+6. Missing primary IDs and missing dates exist in several datasets.
+7. 253 raw Order rows were found without matching Invoice records.
+8. 1,058 raw Invoice rows were found without matching Payment records.
+9. Payment reconciliation identified both underpaid and overpaid invoices.
+10. Referential integrity problems exist because some master IDs are missing or invalid.
+
+
+DATA QUALITY RATING
+===================
+
+Excellent          : 98% - 100%
+Good               : 95% - 97.99%
+Needs Improvement  : 90% - 94.99%
+Critical           : Below 90%
+
+Employee_Master            96.69%   Good
+Customer_Master            99.33%   Excellent
+Product_Master             95.36%   Good
+Region_Master              88.89%   Critical
+Sales_Transactions         98.90%   Excellent
+Sales_Targets              99.38%   Excellent
+Order_Transactions         99.63%   Excellent
+Invoice_Data               99.82%   Excellent
+Payment_Data               99.81%   Excellent
+Purchase_Data              96.74%   Good
+Inventory_Data             84.46%   Critical
+Supplier_Data              96.08%   Good
+Returns_Data               98.00%   Excellent
+Attendance_Data            99.95%   Excellent
+Customer_Complaints        98.15%   Excellent
+Marketing_Campaign_Data    97.79%   Good
+
+OVERALL DATA QUALITY SCORE
+==========================
+
+Total Datasets       : 16
+Total Records        : 23,947
+Valid Records        : 23,644
+Invalid Records      : 303
+
+Overall DQ Score     : 98.73%
+Overall Rating       : Excellent
+
+Formula:
+Overall Data Quality Score =
+(Total Valid Records / Total Records) × 100
+
+= (23,644 / 23,947) × 100
+= 98.73%
+
+Payment_Data
+------------
+Total Records   : 2,602
+Clean Records   : 2,595
+Invalid/Removed : 7
+Data Quality Score : 99.73%
+Rating : Excellent
+
+Issues Identified:
+- Missing Payment_ID
+- Missing Invoice_ID
+- Invalid Invoice_ID reference (INV999999)
+- Negative Payment Amount (-2500)
+- Duplicate Payment_ID records (PAY000151)
+
+
+OVERALL DATA QUALITY SUMMARY
+----------------------------
+Total Records   : 23,947
+Valid Records   : 23,642
+Invalid Records : 305
+Overall Data Quality Score : 98.73%
+Rating : Excellent

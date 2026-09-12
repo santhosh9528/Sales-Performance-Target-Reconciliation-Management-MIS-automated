@@ -1,0 +1,50 @@
+PART 16 - STATISTICAL ANALYSIS
+========================================
+
+DESCRIPTIVE STATISTICS
+----------------------------------------
+                   Mean    Median  Standard_Deviation
+Sales_Value   102353.31  78363.74            87742.11
+Profit         26987.46  15442.02            32490.62
+Quantity           4.53      5.00                2.31
+Unit_Price     25093.50  24000.04            15160.72
+Discount_Pct       0.11      0.10                0.09
+
+95% CONFIDENCE INTERVAL - SALES VALUE
+----------------------------------------
+Mean Sales Value: 102353.31
+Lower Bound: 99618.98
+Upper Bound: 105087.64
+
+HYPOTHESIS TEST 1
+----------------------------------------
+Does a higher discount significantly reduce profit margin?
+
+H0: Higher discount does not significantly reduce profit margin.
+H1: Higher discount significantly reduces profit margin.
+Significance Level: 0.05
+Test Statistic (r): -0.5577
+P-Value: 0.000000
+Conclusion: Reject H0 - Higher discount significantly reduces profit margin.
+Business Interpretation: A statistically significant negative relationship indicates that increasing discounts is associated with lower profit margins. Management should monitor discount levels to protect profitability.
+
+HYPOTHESIS TEST 2
+----------------------------------------
+Does customer complaint frequency significantly affect customer spending?
+
+H0: Customer complaint frequency does not significantly affect customer spending.
+H1: Customer complaint frequency significantly affects customer spending.
+Significance Level: 0.05
+Test Statistic (r): -0.0417
+P-Value: 0.313780
+Conclusion: Fail to Reject H0 - Customer complaint frequency does not have a statistically significant relationship with customer spending.
+Business Interpretation: The analysis does not provide sufficient statistical evidence that complaint frequency is related to customer spending. Other customer behavior factors may have a stronger relationship with spending.
+
+REGRESSION ANALYSIS
+----------------------------------------
+Dependent Variable: Profit
+Independent Variable: Sales Value
+Slope: 0.3218
+Intercept: -5952.73
+R-Squared: 0.7554
+Equation: Predicted Profit = -5952.73 + (0.3218 x Sales Value)

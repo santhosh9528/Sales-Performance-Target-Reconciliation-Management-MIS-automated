@@ -1,0 +1,3 @@
+Test,H0,H1,Significance_Level,Test_Statistic,P_Value,Conclusion
+Discount vs Profit Margin,Higher discount does not significantly reduce profit margin,Higher discount significantly reduces profit margin,0.05,-0.5577161246161305,2e-322,Reject H0 - Higher discount significantly reduces profit margin.
+Complaint Frequency vs Spending,Complaint frequency does not significantly affect customer spending,Complaint frequency significantly affects customer spending,0.05,-0.041683046979041835,0.3137795523134845,Fail to Reject H0 - Customer complaint frequency does not have a statistically significant relationship with customer spending.

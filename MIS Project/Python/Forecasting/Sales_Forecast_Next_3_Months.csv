@@ -1,0 +1,4 @@
+Month,Previous_Month_Revenue,Moving_Average_3M,Forecast_Revenue,Forecast_Growth_Pct,Forecast_Orders,Expected_Target,Expected_Target_Achievement_Pct,Expected_Target_Gap,Target_Likelihood
+2026-09,21035938.58,20236997.88,19514434.1,-7.23,109,28692158.33,68.01,-9177724.24,Low
+2026-10,19514434.1,20822090.34,19443835.49,-0.36,108,28692158.33,67.77,-9248322.84,Low
+2026-11,19443835.49,19998069.39,19373236.88,-0.36,108,28692158.33,67.52,-9318921.45,Low

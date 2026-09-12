@@ -1,0 +1,145 @@
+﻿Product_ID,Product_Name,Category,Subcategory,Supplier_ID,Unit_Cost,Selling_Price,Reorder_Level,Status
+P0001,IT  Product 001,IT Equipment,Networking,S040,17481.21,29889.82,19,Active
+P0002,OFF Product 002,Office Supplies,Stationery,S008,4243.06,6192.19,18,Discontinued
+P0003,HOM Product 003,Home Appliances,Cleaning,S041,1706.77,2347.22,18,Active
+P0004,IT  Product 004,IT Equipment,Laptops,S005,24187.8,31582.6,24,Active
+P0005,ACC Product 005,Accessories,Cases,S044,11418.46,12839.79,26,Active
+P0006,HOM Product 006,Home Appliances,Cooling,S012,19963.98,36352.07,17,Active
+P0007,FUR Product 007,Furniture,Cabinets,S003,16831.3,24681.17,46,Active
+P0008,HOM Product 008,Home Appliances,Kitchen,S035,21996.75,38960.71,26,Active
+P0009,HOM Product 009,Home Appliances,Cooling,S037,2074.06,3111.88,48,Active
+P0010,ACC Product 010,Accessories,Cases,S022,772.9,1191.42,27,Active
+P0011,OFF Product 011,Office Supplies,Paper,S025,29444.98,40268.41,45,Active
+P0012,OFF Product 012,Office Supplies,Storage,S008,21246.44,26702.24,24,Active
+P0013,IT  Product 013,IT Equipment,Laptops,S016,9589.83,11348.24,28,Active
+P0014,FUR Product 014,Furniture,Chairs,S024,18435.5,23003.07,7,Active
+P0015,ELE Product 015,Electronics,Tablets,S033,17769.09,30265.89,14,Active
+P0017,ELE Product 017,Electronics,Audio,S047,23723.9,28869.22,7,Active
+P0018,HOM Product 018,Home Appliances,Cooling,S020,30284.58,36479.6,7,Discontinued
+P0019,ELE Product 019,Electronics,Tablets,S034,16404.63,18925.73,47,Active
+P0020,ELE Product 020,Electronics,Audio,S014,26576.26,42159.55,25,Active
+P0021,OFF Product 021,Office Supplies,Paper,S029,9769.54,13217.98,47,Active
+P0022,FUR Product 022,Furniture,Chairs,S040,5613.46,6756.12,40,Active
+P0023,ELE Product 023,Electronics,Mobiles,S018,19043.4,28965.72,14,Active
+P0024,ACC Product 024,Accessories,Cables,S022,6094.07,8210.58,39,Active
+P0025,ELE Product 025,Electronics,Mobiles,S004,1131.26,2012.98,11,Active
+P0026,ELE Product 026,Electronics,Mobiles,S039,14995.13,18753.77,42,Active
+P0027,ACC Product 027,Accessories,Adapters,S046,11017.93,18914.84,47,Active
+P0028,ELE Product 028,Electronics,Tablets,S045,19924.49,23666.88,34,Active
+P0029,HOM Product 029,Home Appliances,Cleaning,S030,23994.59,39314.12,35,Active
+P0030,OFF Product 030,Office Supplies,Stationery,S024,30155.04,47354.5,30,Active
+P0031,IT  Product 031,IT Equipment,Networking,S021,11641.84,20354.33,34,Active
+P0032,ELE Product 032,Electronics,Mobiles,S030,16699.66,22987.95,15,Active
+P0034,FUR Product 034,Furniture,Cabinets,S035,22772.87,38679.13,34,Active
+P0035,ACC Product 035,Accessories,Adapters,S011,8441.51,10956.18,35,Active
+P0036,ELE Product 036,Electronics,Tablets,S028,7383.35,12010.22,32,Discontinued
+P0037,FUR Product 037,Furniture,Cabinets,S043,24331.36,30325.45,9,Discontinued
+P0038,HOM Product 038,Home Appliances,Kitchen,S036,20774.65,30287.84,11,Active
+P0040,HOM Product 040,Home Appliances,Cleaning,S006,17361.01,27810.96,18,Active
+P0041,ACC Product 041,Accessories,Cases,S043,28367.2,47448.87,14,Active
+P0042,ACC Product 042,Accessories,Adapters,S013,13722.6,21158.73,18,Active
+P0043,FUR Product 043,Furniture,Cabinets,S028,27826.81,44970.3,50,Active
+P0044,ELE Product 044,Electronics,Audio,S026,403.2,741.92,13,Active
+P0046,FUR Product 046,Furniture,Chairs,S016,30160.32,52839.26,32,Discontinued
+P0047,HOM Product 047,Home Appliances,Cooling,S025,11216.28,15696.47,32,Active
+P0048,OFF Product 048,Office Supplies,Storage,S036,6168.54,7535,29,Active
+P0049,HOM Product 049,Home Appliances,Kitchen,S009,10181.86,17890.52,13,Active
+P0050,ELE Product 050,Electronics,Audio,S032,667.89,1099.73,47,Active
+P0051,OFF Product 051,Office Supplies,Stationery,S030,4906.24,8381.52,49,Discontinued
+P0052,HOM Product 052,Home Appliances,Cooling,S036,6391.33,9535.06,33,Active
+P0053,FUR Product 053,Furniture,Chairs,S037,6600.39,10305.44,36,Active
+P0054,IT  Product 054,IT Equipment,Networking,S037,9511.46,17086.3,28,Active
+P0055,ELE Product 055,Electronics,Audio,S038,16976.39,23581.27,35,Active
+P0056,OFF Product 056,Office Supplies,Storage,S049,25627.51,47103.68,22,Active
+P0057,ACC Product 057,Accessories,Cables,S016,18374.68,28762.84,35,Active
+P0058,IT  Product 058,IT Equipment,Networking,S040,18927.2,29207.1,8,Active
+P0059,ACC Product 059,Accessories,Cables,S031,16474.14,24616.39,41,Active
+P0060,HOM Product 060,Home Appliances,Cleaning,S019,33625.08,57253.52,15,Active
+P0061,IT  Product 061,IT Equipment,Networking,S037,26259.95,43347.03,21,Active
+P0062,IT  Product 062,IT Equipment,Monitors,S043,20285.56,31203,23,Discontinued
+P0063,ELE Product 063,Electronics,Tablets,S005,17028.44,20648.33,22,Active
+P0064,OFF Product 064,Office Supplies,Storage,S001,9920.3,17323.19,12,Discontinued
+P0065,OFF Product 065,Office Supplies,Storage,S024,25895.18,41462.93,16,Active
+P0066,IT  Product 066,IT Equipment,Laptops,S003,17033.96,29018.06,26,Active
+P0067,OFF Product 067,Office Supplies,Storage,S032,32695.89,40298.66,31,Active
+P0068,OFF Product 068,Office Supplies,Storage,S014,15473.65,24532.39,41,Active
+P0069,ELE Product 069,Electronics,Audio,S004,9342.11,16052.16,15,Active
+P0070,HOM Product 070,Home Appliances,Cleaning,S049,10631.69,17698.46,39,Active
+P0071,HOM Product 071,Home Appliances,Cooling,S010,24731.6,36267.66,38,Active
+P0072,ELE Product 072,Electronics,Tablets,S044,32461.52,46992.57,25,Active
+P0073,IT  Product 073,IT Equipment,Laptops,S023,3516.07,5301.68,32,Discontinued
+P0075,HOM Product 075,Home Appliances,Cleaning,S047,27087.51,45150.44,48,Discontinued
+P0076,OFF Product 076,Office Supplies,Storage,S012,11888.74,19306.17,25,Active
+P0077,ELE Product 077,Electronics,Audio,S027,415.65,486.14,11,Active
+P0078,ELE Product 078,Electronics,Audio,S019,15674.46,20066.04,21,Active
+P0079,ELE Product 079,Electronics,Mobiles,S039,21724.58,25233.61,47,Active
+P0080,ACC Product 080,Accessories,Cases,S006,4368.04,7946.3,43,Active
+P0081,HOM Product 081,Home Appliances,Cooling,S012,26763.36,42633.26,12,Active
+P0082,FUR Product 082,Furniture,Tables,S041,16407.41,29589.34,34,Active
+P0083,HOM Product 083,Home Appliances,Cooling,S021,31630.3,53202.56,21,Active
+P0084,ELE Product 084,Electronics,Tablets,S022,27225.46,38100.48,8,Active
+P0085,FUR Product 085,Furniture,Chairs,S013,15487.25,22904.98,44,Active
+P0086,OFF Product 086,Office Supplies,Storage,S050,17282.96,21172.09,32,Active
+P0087,ACC Product 087,Accessories,Cases,S017,3825.99,5518.43,11,Active
+P0088,ELE Product 088,Electronics,Mobiles,S029,20048.5,26121.9,6,Active
+P0089,OFF Product 089,Office Supplies,Storage,S043,22454.89,40441.54,29,Active
+P0090,OFF Product 090,Office Supplies,Storage,S001,11624.5,16340.23,37,Active
+P0091,HOM Product 091,Home Appliances,Cleaning,S005,14208.48,23462.03,39,Active
+P0092,ELE Product 092,Electronics,Tablets,S031,33400.94,57353.52,12,Discontinued
+P0093,ACC Product 093,Accessories,Adapters,S004,11750.38,15758.01,45,Active
+P0094,FUR Product 094,Furniture,Cabinets,S030,29884.57,40889.44,23,Active
+P0095,OFF Product 095,Office Supplies,Storage,S013,1491.87,2089.28,24,Active
+P0096,ELE Product 096,Electronics,Audio,S041,24146.83,35620.14,33,Active
+P0097,OFF Product 097,Office Supplies,Stationery,S038,6855.07,11279.4,20,Active
+P0098,HOM Product 098,Home Appliances,Kitchen,S032,27770.74,44146.8,39,Active
+P0099,ELE Product 099,Electronics,Mobiles,S047,11954.26,16335.92,7,Active
+P0100,ELE Product 100,Electronics,Mobiles,S030,28271.78,45436.73,48,Active
+P0101,OFF Product 101,Office Supplies,Storage,S003,20327.58,36490.35,14,Active
+P0102,IT  Product 102,IT Equipment,Laptops,S003,16556.14,29638.04,20,Active
+P0104,OFF Product 104,Office Supplies,Storage,S008,2350.84,4035.82,36,Discontinued
+P0105,ACC Product 105,Accessories,Cables,S022,2321.28,2943.22,48,Active
+P0106,FUR Product 106,Furniture,Chairs,S009,34157.76,52618.53,25,Active
+P0107,ELE Product 107,Electronics,Audio,S018,6169.85,7194.99,14,Active
+P0108,OFF Product 108,Office Supplies,Storage,S016,13023.07,16154.52,42,Active
+P0109,OFF Product 109,Office Supplies,Stationery,S025,27711.9,43826.43,15,Active
+P0110,HOM Product 110,Home Appliances,Kitchen,S006,341.47,427.17,50,Discontinued
+P0111,FUR Product 111,Furniture,Tables,S031,24309.4,41285.53,49,Active
+P0112,OFF Product 112,Office Supplies,Stationery,S027,22437.12,33697.27,20,Active
+P0113,ACC Product 113,Accessories,Cases,S032,1432.23,1792.29,44,Active
+P0114,IT  Product 114,IT Equipment,Monitors,S016,12253.13,13764.39,17,Active
+P0115,ACC Product 115,Accessories,Cables,S035,21707.96,37984.46,37,Active
+P0116,HOM Product 116,Home Appliances,Cooling,S013,23117.33,30556.29,12,Active
+P0117,IT  Product 117,IT Equipment,Monitors,S003,17473.32,21607.93,8,Active
+P0118,FUR Product 118,Furniture,Chairs,S049,15281.35,20844.29,34,Active
+P0119,ELE Product 119,Electronics,Audio,S011,1949.69,2948.46,6,Active
+P0120,ACC Product 120,Accessories,Cables,S029,2591.58,3347.72,42,Discontinued
+P0121,FUR Product 121,Furniture,Tables,S021,7052.45,11383.37,19,Active
+P0122,FUR Product 122,Furniture,Chairs,S013,3540.48,5872.08,29,Active
+P0123,ELE Product 123,Electronics,Tablets,S028,20528.02,23805.68,14,Active
+P0124,ACC Product 124,Accessories,Adapters,S030,6330.76,8816.49,17,Active
+P0125,FUR Product 125,Furniture,Chairs,S037,11835.89,13533.5,8,Active
+P0126,OFF Product 126,Office Supplies,Stationery,S011,29825.6,43389.17,26,Active
+P0127,FUR Product 127,Furniture,Cabinets,S040,5588.77,9501.09,15,Discontinued
+P0128,ACC Product 128,Accessories,Cables,S032,3136.22,5474.57,18,Discontinued
+P0129,HOM Product 129,Home Appliances,Cleaning,S048,9857.48,16293.56,20,Active
+P0130,FUR Product 130,Furniture,Tables,S038,20331.81,36008.26,14,Discontinued
+P0131,ELE Product 131,Electronics,Tablets,S031,34308.82,39429.16,37,Active
+P0132,HOM Product 132,Home Appliances,Cooling,S045,13873.89,23739.51,11,Active
+P0133,HOM Product 133,Home Appliances,Kitchen,S045,3018.23,5039.69,31,Active
+P0134,OFF Product 134,Office Supplies,Paper,S006,10437.17,16624.09,6,Active
+P0135,IT  Product 135,IT Equipment,Monitors,S037,5763.68,8387.75,42,Active
+P0136,HOM Product 136,Home Appliances,Cleaning,S026,27041.61,47543.61,16,Active
+P0137,IT  Product 137,IT Equipment,Monitors,S041,24672.1,27657.32,9,Active
+P0138,IT  Product 138,IT Equipment,Monitors,S049,18638.5,24910.56,22,Discontinued
+P0139,ACC Product 139,Accessories,Cases,S006,27831.42,47174.67,44,Active
+P0140,IT  Product 140,IT Equipment,Laptops,S024,18074.01,32249.51,8,Active
+P0141,HOM Product 141,Home Appliances,Cleaning,S024,16351.51,18801.59,16,Active
+P0142,IT  Product 142,IT Equipment,Laptops,S009,19679.25,33153.83,26,Active
+P0143,ACC Product 143,Accessories,Cables,S049,22758.46,37740.07,42,Active
+P0144,IT  Product 144,IT Equipment,Laptops,S033,11297.78,20059.1,48,Active
+P0145,FUR Product 145,Furniture,Chairs,S032,2330.32,3197.23,37,Active
+P0146,ELE Product 146,Electronics,Tablets,S035,24878.71,40183.22,23,Active
+P0147,ACC Product 147,Accessories,Adapters,S005,28020.65,50720.64,17,Active
+P0148,ELE Product 148,Electronics,Mobiles,S005,13747.01,17191.08,11,Active
+P0149,FUR Product 149,Furniture,Chairs,S014,24434.22,36219.34,38,Active
+P0150,FUR Product 150,Furniture,Tables,S009,33938.76,51425.63,35,Active

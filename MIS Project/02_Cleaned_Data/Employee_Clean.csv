@@ -1,0 +1,118 @@
+﻿Employee_ID,Employee_Name,Department,Designation,Region_ID,City,Date_of_Joining,Monthly_Salary,Manager_ID,Email,Status
+E0001,Arun Singh,Finance,Senior Executive,R002,Chennai,2020-07-25,35434,,arunsingh1@company.com,Active
+E0002,Surya Rao,Sales,Executive,R002,Chennai,2020-01-19,50657,,suryarao2@company.com,Active
+E0003,Asha Patel,Marketing,Manager,R001,Bangalore,2025-02-10,76987,,ashapatel3@company.com,Active
+E0004,Surya Singh,Procurement,Executive,R008,Jaipur,2020-10-15,77392,,suryasingh4@company.com,Active
+E0005,Rahul Patel,Procurement,Analyst,R005,Pune,2020-02-23,34156,,rahulpatel5@company.com,Active
+E0006,Anitha Nair,Customer Support,Analyst,R002,Chennai,2019-06-27,82217,,anithanair6@company.com,Active
+E0007,Rohit Sharma,Customer Support,Analyst,R002,Chennai,2026-01-18,69400,,rohitsharma7@company.com,Inactive
+E0009,Rohit Singh,Warehouse,Manager,R002,Chennai,2023-02-03,43319,E0006,rohitsingh9@company.com,Active
+E0010,Ajay Sharma,Customer Support,Manager,R004,Mumbai,2020-12-01,92010,E0004,ajaysharma10@company.com,Active
+E0011,Rohit Singh,Marketing,Manager,R008,Jaipur,2025-03-31,50785,E0006,rohitsingh11@company.com,Active
+E0012,Karthik Nair,Warehouse,Analyst,R004,Mumbai,2019-09-29,49653,E0010,karthiknair12@company.com,Active
+E0013,Kavya Rao,Marketing,Senior Analyst,R004,Mumbai,2020-08-08,56718,E0003,kavyarao13@company.com,Active
+E0014,Surya Rao,Customer Support,Senior Analyst,R005,Pune,2023-01-22,50746,E0003,suryarao14@company.com,Active
+E0015,Priya Kumar,Procurement,Executive,R008,Jaipur,2020-09-18,42969,E0013,priyakumar15@company.com,Active
+E0016,Rohit Rao,Customer Support,Senior Analyst,R002,Chennai,2024-12-07,54953,E0009,rohitrao16@company.com,Active
+E0017,Asha Singh,Procurement,Manager,R002,Chennai,2022-10-25,36621,E0010,ashasingh17@company.com,Active
+E0018,Manoj Kumar,Marketing,Manager,R003,Hyderabad,2021-12-14,87612,E0006,manojkumar18@company.com,Active
+E0020,Lakshmi Nair,Warehouse,Executive,R001,Bangalore,2020-04-03,69576,E0010,lakshminair20@company.com,Active
+E0021,Meena Gupta,Sales,Executive,R001,Bangalore,2024-06-13,31071,E0018,meenagupta21@company.com,Active
+E0022,Kavya Iyer,Finance,Analyst,R003,Hyderabad,2024-12-01,77461,E0007,kavyaiyer22@company.com,Active
+E0023,Nisha Rao,Marketing,Manager,R004,Mumbai,2023-03-10,79422,E0017,nisharao23@company.com,Active
+E0024,Meena Patel,Sales,Team Lead,R002,Chennai,2019-03-28,94603,E0008,meenapatel24@company.com,Inactive
+E0026,Priya Iyer,Finance,Analyst,R006,Delhi,2024-06-11,50080,E0018,priyaiyer26@company.com,Active
+E0027,Meena Das,Procurement,Senior Analyst,R008,Jaipur,2021-02-18,34363,E0004,meenadas27@company.com,Active
+E0028,Pooja Rao,Warehouse,Manager,R006,Delhi,2019-08-10,34899,E0002,poojarao28@company.com,Active
+E0029,Divya Patel,Finance,Senior Executive,R006,Delhi,2025-01-05,80800,E0005,divyapatel29@company.com,Active
+E0030,Ajay Das,Finance,Executive,R003,Hyderabad,2023-12-21,94132,E0004,ajaydas30@company.com,Active
+E0031,Priya Patel,Finance,Senior Analyst,R001,Bangalore,2024-06-12,85092,E0007,priyapatel31@company.com,Active
+E0032,Sneha Rao,Sales,Manager,R001,Bangalore,2021-12-22,81638,E0010,sneharao32@company.com,Active
+E0033,Rahul Patel,Operations,Senior Executive,R008,Jaipur,2019-08-28,93066,E0004,rahulpatel33@company.com,Active
+E0034,Karthik Gupta,Warehouse,Team Lead,R001,Bangalore,2024-12-15,42635,E0004,karthikgupta34@company.com,Active
+E0035,Sneha Sharma,Customer Support,Executive,R002,Chennai,2021-08-21,74923,E0008,snehasharma35@company.com,Inactive
+E0036,Surya Gupta,Sales,Executive,R004,Mumbai,2023-09-14,90522,E0021,suryagupta36@company.com,Active
+E0037,Sanjay Patel,Operations,Senior Analyst,R004,Mumbai,2020-06-20,61321,E0030,sanjaypatel37@company.com,Active
+E0038,Arun Das,Customer Support,Team Lead,R002,Chennai,2020-02-14,31602,E0035,arundas38@company.com,Active
+E0039,Rahul Nair,Sales,Senior Executive,R005,Pune,2023-02-22,59353,E0011,rahulnair39@company.com,Active
+E0040,Lakshmi Iyer,Sales,Team Lead,R005,Pune,2020-02-29,39601,E0017,lakshmiiyer40@company.com,Active
+E0041,Asha Reddy,Operations,Analyst,R002,Chennai,2025-10-13,49607,E0022,ashareddy41@company.com,Active
+E0042,Deepak Das,Operations,Executive,R005,Pune,2020-01-14,77518,E0018,deepakdas42@company.com,Active
+E0043,Sanjay Reddy,Marketing,Analyst,R001,Bangalore,2020-10-23,79912,E0036,sanjayreddy43@company.com,Active
+E0044,Divya Sharma,Marketing,Senior Executive,R001,Bangalore,2025-02-12,26722,E0024,divyasharma44@company.com,Inactive
+E0045,Pooja Reddy,Sales,Team Lead,R003,Hyderabad,2023-02-02,27229,E0023,poojareddy45@company.com,Active
+E0046,Divya Nair,Procurement,Team Lead,R004,Mumbai,2023-07-23,42257,E0016,divyanair46@company.com,Active
+E0047,Pooja Kumar,Finance,Manager,R003,Hyderabad,2022-09-22,75964,E0043,poojakumar47@company.com,Active
+E0048,Sneha Sharma,Warehouse,Executive,R005,Pune,2024-04-11,51154,E0013,snehasharma48@company.com,Active
+E0049,Nisha Patel,Finance,Executive,R006,Delhi,2026-05-27,47313,E0026,nishapatel49@company.com,Active
+E0050,Priya Singh,Operations,Manager,R005,Pune,2024-09-17,74386,E0044,priyasingh50@company.com,Active
+E0051,Arun Sharma,Operations,Senior Executive,R006,Delhi,2025-07-06,56795,E0003,arunsharma51@company.com,Active
+E0052,Anitha Nair,Warehouse,Team Lead,R007,Kolkata,2024-09-25,37157,E0025,anithanair52@company.com,Inactive
+E0053,Ajay Kumar,Marketing,Senior Analyst,R004,Mumbai,2019-01-07,90146,E0052,ajaykumar53@company.com,Active
+E0054,Anitha Rao,Sales,Team Lead,R004,Mumbai,2025-12-27,63145,E0043,anitharao54@company.com,Active
+E0055,Deepak Singh,Marketing,Senior Analyst,R005,Pune,2022-08-29,74743,E0045,deepaksingh55@company.com,Active
+E0056,Vijay Rao,Marketing,Senior Analyst,R003,Hyderabad,2020-12-13,61446,E0026,vijayrao56@company.com,Active
+E0057,Nisha Singh,Finance,Senior Analyst,R001,Bangalore,2025-07-03,64237,E0030,nishasingh57@company.com,Active
+E0058,Vijay Iyer,Warehouse,Manager,R008,Jaipur,2020-11-26,33114,E0019,vijayiyer58@company.com,Active
+E0059,Priya Patel,Marketing,Analyst,R006,Delhi,2021-07-09,48100,E0010,priyapatel59@company.com,Active
+E0060,Meena Das,Customer Support,Executive,R001,Bangalore,2024-02-09,76321,E0057,meenadas60@company.com,Inactive
+E0061,Rohit Das,Warehouse,Senior Executive,R004,Mumbai,2020-08-27,22726,E0058,rohitdas61@company.com,Active
+E0062,Meena Reddy,Procurement,Manager,R007,Kolkata,2024-10-22,82889,E0004,meenareddy62@company.com,Active
+E0063,Divya Das,Finance,Senior Analyst,R004,Mumbai,2024-12-15,63588,E0049,divyadas63@company.com,Active
+E0064,Asha Das,Finance,Manager,R007,Kolkata,2024-04-28,80991,E0017,ashadas64@company.com,Active
+E0065,Deepak Das,Marketing,Senior Executive,R005,Pune,2022-01-29,79654,E0005,deepakdas65@company.com,Active
+E0066,Ajay Nair,Operations,Team Lead,R004,Mumbai,2019-11-27,40136,E0010,ajaynair66@company.com,Active
+E0067,Rahul Patel,Sales,Manager,R007,Kolkata,2023-07-28,65369,E0035,rahulpatel67@company.com,Active
+E0068,Karthik Patel,Procurement,Senior Analyst,R007,Kolkata,2023-05-15,24560,E0055,karthikpatel68@company.com,Inactive
+E0069,Kavya Kumar,Operations,Analyst,R007,Kolkata,2023-05-17,76921,E0035,kavyakumar69@company.com,Active
+E0070,Kavya Patel,Operations,Senior Analyst,R004,Mumbai,2024-06-12,25804,E0025,kavyapatel70@company.com,Active
+E0071,Sneha Das,Finance,Team Lead,R007,Kolkata,2024-12-27,25534,E0059,snehadas71@company.com,Active
+E0072,Priya Rao,Finance,Senior Analyst,R001,Bangalore,2021-01-14,28590,E0017,priyarao72@company.com,Active
+E0073,Vijay Das,Operations,Analyst,R006,Delhi,2023-04-02,58471,E0049,vijaydas73@company.com,Active
+E0074,Priya Das,Sales,Executive,R005,Pune,2022-12-04,51389,E0042,priyadas74@company.com,Active
+E0075,Arun Patel,Finance,Executive,R001,Bangalore,2025-12-19,41973,E0016,arunpatel75@company.com,Active
+E0076,Divya Gupta,Finance,Senior Analyst,R008,Jaipur,2021-11-15,70351,E0011,divyagupta76@company.com,Inactive
+E0077,Sneha Singh,Sales,Executive,R002,Chennai,2022-07-01,71192,E0026,snehasingh77@company.com,Active
+E0078,Surya Patel,Sales,Team Lead,R002,Chennai,2025-09-25,37866,E0051,suryapatel78@company.com,Inactive
+E0079,Anitha Iyer,Warehouse,Manager,R001,Bangalore,2023-02-26,31038,E0033,anithaiyer79@company.com,Active
+E0080,Pooja Das,Sales,Manager,R001,Bangalore,2023-01-23,82258,E0046,poojadas80@company.com,Active
+E0081,Sneha Iyer,Marketing,Analyst,R007,Kolkata,2025-11-27,92539,E0050,snehaiyer81@company.com,Active
+E0082,Pooja Gupta,Operations,Analyst,R008,Jaipur,2021-10-02,33359,E0018,poojagupta82@company.com,Active
+E0083,Manoj Gupta,Customer Support,Manager,R004,Mumbai,2023-04-02,66092,E0002,manojgupta83@company.com,Active
+E0084,Sneha Das,Finance,Analyst,R006,Delhi,2021-11-24,66608,E0018,snehadas84@company.com,Inactive
+E0085,Asha Kumar,Customer Support,Senior Executive,R005,Pune,2019-12-17,53635,E0047,ashakumar85@company.com,Active
+E0086,Asha Patel,Marketing,Senior Analyst,R008,Jaipur,2026-03-30,86332,E0029,ashapatel86@company.com,Active
+E0087,Nisha Patel,Warehouse,Manager,R002,Chennai,2021-09-23,62135,E0043,nishapatel87@company.com,Inactive
+E0088,Kavya Iyer,Customer Support,Analyst,R006,Delhi,2023-10-09,94140,E0022,kavyaiyer88@company.com,Active
+E0089,Ajay Singh,Operations,Senior Executive,R008,Jaipur,2020-05-09,47242,E0021,ajaysingh89@company.com,Active
+E0090,Vijay Patel,Marketing,Senior Analyst,R003,Hyderabad,2022-02-06,90765,E0039,vijaypatel90@company.com,Active
+E0091,Vijay Singh,Finance,Analyst,R002,Chennai,2021-01-04,61618,E0001,vijaysingh91@company.com,Active
+E0092,Ajay Kumar,Sales,Team Lead,R003,Hyderabad,2020-06-01,86340,E0007,ajaykumar92@company.com,Active
+E0093,Kavya Das,Warehouse,Analyst,R005,Pune,2021-01-25,28734,E0017,kavyadas93@company.com,Active
+E0094,Priya Rao,Warehouse,Executive,R002,Chennai,2025-06-21,29026,E0010,priyarao94@company.com,Active
+E0095,Priya Patel,Sales,Manager,R005,Pune,2025-10-19,51581,E0050,priyapatel95@company.com,Active
+E0096,Manoj Das,Operations,Team Lead,R007,Kolkata,2023-10-23,62026,E0037,manojdas96@company.com,Inactive
+E0097,Lakshmi Sharma,Procurement,Senior Executive,R001,Bangalore,2026-01-06,49659,E0017,lakshmisharma97@company.com,Active
+E0098,Meena Reddy,Customer Support,Executive,R003,Hyderabad,2020-10-03,22350,E0027,meenareddy98@company.com,Active
+E0099,Nisha Kumar,Finance,Analyst,R008,Jaipur,2022-03-04,81510,E0005,nishakumar99@company.com,Active
+E0100,Surya Patel,Warehouse,Executive,R005,Pune,2025-02-08,51466,E0042,suryapatel100@company.com,Active
+E0101,Rahul Sharma,Sales,Senior Executive,R005,Pune,2022-06-13,59828,E0029,rahulsharma101@company.com,Active
+E0102,Nisha Rao,Operations,Team Lead,R008,Jaipur,2025-01-20,86722,E0029,nisharao102@company.com,Active
+E0103,Pooja Nair,Customer Support,Analyst,R001,Bangalore,2019-04-16,33970,E0015,poojanair103@company.com,Inactive
+E0104,Ajay Gupta,Sales,Senior Executive,R001,Bangalore,2024-04-11,90021,E0042,ajaygupta104@company.com,Active
+E0105,Sneha Gupta,Warehouse,Manager,R005,Pune,2024-07-07,33959,E0031,snehagupta105@company.com,Active
+E0106,Sanjay Nair,Marketing,Executive,R007,Kolkata,2020-10-20,65228,E0027,sanjaynair106@company.com,Active
+E0107,Rohit Iyer,Sales,Manager,R005,Pune,2019-12-27,63224,E0017,rohitiyer107@company.com,Active
+E0108,Rohit Iyer,Procurement,Executive,R002,Chennai,2026-05-17,93118,E0030,rohitiyer108@company.com,Active
+E0109,Vijay Iyer,Operations,Team Lead,R001,Bangalore,2024-08-03,79939,E0049,vijayiyer109@company.com,Active
+E0110,Ajay Iyer,Finance,Analyst,R004,Mumbai,2023-11-30,85532,E0008,ajayiyer110@company.com,Active
+E0111,Sneha Singh,Customer Support,Executive,R004,Mumbai,2025-03-12,75476,E0006,snehasingh111@company.com,Active
+E0112,Manoj Sharma,Marketing,Senior Executive,R002,Chennai,2024-08-03,60254,E0033,manojsharma112@company.com,Active
+E0113,Kavya Das,Finance,Senior Analyst,R007,Kolkata,2025-03-07,40958,E0025,kavyadas113@company.com,Active
+E0114,Priya Singh,Procurement,Senior Analyst,R003,Hyderabad,2022-10-24,88550,E0018,priyasingh114@company.com,Active
+E0115,Nisha Gupta,Customer Support,Manager,R005,Pune,2024-06-28,41476,E0029,nishagupta115@company.com,Active
+E0116,Anitha Nair,Customer Support,Team Lead,R008,Jaipur,2023-03-26,81682,E0060,anithanair116@company.com,Active
+E0117,Meena Gupta,Warehouse,Senior Executive,R004,Mumbai,2023-08-10,27720,E0021,meenagupta117@company.com,Active
+E0118,Rohit Reddy,Warehouse,Executive,R007,Kolkata,2020-06-01,87836,E0038,rohitreddy118@company.com,Active
+E0119,Manoj Sharma,Customer Support,Senior Analyst,R002,Chennai,2019-03-04,40894,E0027,manojsharma119@company.com,Active
+E0120,Kavya Singh,Operations,Team Lead,R002,Chennai,2023-06-17,32527,E0055,kavyasingh120@company.com,Active
